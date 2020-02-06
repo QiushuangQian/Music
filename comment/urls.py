@@ -1,2 +1,7 @@
+from django.urls import path
 
-urlpatterns=[]
+from . import views
+
+urlpatterns=[
+    path('<int:song_id>.html',views.commentView,name='comment'),
+]
